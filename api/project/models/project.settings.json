@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "name": "project"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "headerTitle": {
+      "type": "string"
+    },
+    "province": {
+      "type": "string"
+    },
+    "spot": {
+      "type": "string"
+    },
+    "description1": {
+      "type": "richtext"
+    },
+    "description2": {
+      "type": "richtext"
+    },
+    "showcaseImage": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "projectslink": {
+      "type": "string"
+    },
+    "properties": {
+      "type": "json"
+    }
+  }
+}
